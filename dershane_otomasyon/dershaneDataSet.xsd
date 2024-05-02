@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="dershane2DataSet" targetNamespace="http://tempuri.org/dershane2DataSet.xsd" xmlns:mstns="http://tempuri.org/dershane2DataSet.xsd" xmlns="http://tempuri.org/dershane2DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="dershaneDataSet" targetNamespace="http://tempuri.org/dershaneDataSet.xsd" xmlns:mstns="http://tempuri.org/dershaneDataSet.xsd" xmlns="http://tempuri.org/dershaneDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dershane2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dershane2ConnectionString (Settings)" PropertyReference="ApplicationSettings.dershane_otomasyon.Properties.Settings.GlobalReference.Default.dershane2ConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dershaneConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dershaneConnectionString (Settings)" PropertyReference="ApplicationSettings.dershane_otomasyon.Properties.Settings.GlobalReference.Default.dershaneConnectionString" Provider="System.Data.OleDb" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ogrTableAdapter" GeneratorDataComponentClassName="ogrTableAdapter" Name="ogr" UserDataComponentName="ogrTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="dershane2ConnectionString (Settings)" DbObjectName="ogr" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="dershaneConnectionString (Settings)" DbObjectName="ogr" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>SELECT ogr_id, ogr_ad, ogr_soyad, cinsiyet, d_tarihi, telefon, email, adres, veli_ad, veli_soyad, veli_tlfn, kurs_ad, alani FROM ogr</CommandText>
@@ -26,7 +26,7 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="dershane2DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="dershane2DataSet" msprop:Generator_DataSetName="dershane2DataSet">
+  <xs:element name="dershaneDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="dershaneDataSet" msprop:Generator_DataSetName="dershaneDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="ogr" msprop:Generator_RowEvHandlerName="ogrRowChangeEventHandler" msprop:Generator_RowDeletedName="ogrRowDeleted" msprop:Generator_RowDeletingName="ogrRowDeleting" msprop:Generator_RowEvArgName="ogrRowChangeEvent" msprop:Generator_TablePropName="ogr" msprop:Generator_RowChangedName="ogrRowChanged" msprop:Generator_RowChangingName="ogrRowChanging" msprop:Generator_TableClassName="ogrDataTable" msprop:Generator_RowClassName="ogrRow" msprop:Generator_TableVarName="tableogr" msprop:Generator_UserTableName="ogr">

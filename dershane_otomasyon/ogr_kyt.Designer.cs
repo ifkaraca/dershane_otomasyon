@@ -462,8 +462,7 @@
             this.cinsiyet.FormattingEnabled = true;
             this.cinsiyet.Items.AddRange(new object[] {
             "Erkek",
-            "Kız",
-            "Belirtmek İstemiyorum"});
+            "Kız"});
             this.cinsiyet.Location = new System.Drawing.Point(148, 179);
             this.cinsiyet.Margin = new System.Windows.Forms.Padding(2);
             this.cinsiyet.Name = "cinsiyet";

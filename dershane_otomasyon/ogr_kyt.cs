@@ -19,7 +19,7 @@ namespace dershane_otomasyon
         {
             InitializeComponent();
         }
-        OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dershane2.mdb");
+        OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dershane.mdb");
         
         
         private void button2_Click(object sender, EventArgs e)

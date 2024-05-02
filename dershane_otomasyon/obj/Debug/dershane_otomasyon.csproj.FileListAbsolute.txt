@@ -10,6 +10,6 @@ C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\der
 C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.pdb
 C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.ogr_kyt.resources
 C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.ana_sayfa.resources
-C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\bin\Debug\dershane2.mdb
 C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.login.resources
 C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.login2.resources
+C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\bin\Debug\dershane.mdb

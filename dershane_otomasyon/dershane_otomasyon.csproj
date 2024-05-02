@@ -58,10 +58,10 @@
     <Compile Include="ana_sayfa.Designer.cs">
       <DependentUpon>ana_sayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="dershane2DataSet.Designer.cs">
+    <Compile Include="dershaneDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>dershane2DataSet.xsd</DependentUpon>
+      <DependentUpon>dershaneDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="dgs.cs">
       <SubType>Form</SubType>
@@ -167,16 +167,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="dershane2DataSet.xsc">
-      <DependentUpon>dershane2DataSet.xsd</DependentUpon>
+    <None Include="dershaneDataSet.xsc">
+      <DependentUpon>dershaneDataSet.xsd</DependentUpon>
     </None>
-    <None Include="dershane2DataSet.xsd">
+    <None Include="dershaneDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dershane2DataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>dershaneDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="dershane2DataSet.xss">
-      <DependentUpon>dershane2DataSet.xsd</DependentUpon>
+    <None Include="dershaneDataSet.xss">
+      <DependentUpon>dershaneDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -192,7 +192,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dershane2.mdb">
+    <Content Include="dershane.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
