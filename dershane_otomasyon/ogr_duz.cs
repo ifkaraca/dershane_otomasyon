@@ -17,11 +17,11 @@ namespace dershane_otomasyon
         {
             InitializeComponent();
         }
-        OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dershaneas.mdb");
+        MsgHelper msgHelper = new MsgHelper();
         DbHelper dbHelper = new DbHelper();
         private void listele()
         {
-            DataTable doluTablo= dbHelper.GetOgrTable();
+            DataTable doluTablo = dbHelper.GetOgrTable();
             dataGridView1.DataSource = doluTablo;
         }
         private void ogr_duz_Load(object sender, EventArgs e)
@@ -48,11 +48,8 @@ namespace dershane_otomasyon
 
         private void button3_Click(object sender, EventArgs e)
         {
-            baglanti.Open();
-            OleDbCommand komut = new OleDbCommand("delete * from ogr where ogr_id='" + dataGridView1.CurrentRow.Cells["ogr_id"].Value.ToString() + "'", baglanti);
-            komut.ExecuteNonQuery();
-            baglanti.Close();
-            MessageBox.Show("Kayıt başarılı bir şekilde silindi", "Silme İşlemi");
+            dbHelper.AllDelete("ogr",ogr_id.Text);
+            msgHelper.IslemMsg("silindi", "Silme");
             listele();
         }
     }

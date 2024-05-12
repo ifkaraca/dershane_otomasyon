@@ -89,6 +89,7 @@
     <Compile Include="login2.Designer.cs">
       <DependentUpon>login2.cs</DependentUpon>
     </Compile>
+    <Compile Include="MsgHelper.cs" />
     <Compile Include="not_duz.cs">
       <SubType>Form</SubType>
     </Compile>

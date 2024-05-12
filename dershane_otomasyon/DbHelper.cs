@@ -45,30 +45,42 @@ values('{ogr_ad}', '{ogr_soyad}','{cinsiyet}','{dogumTarihi}','{ogr_telno}','{ma
             KomutCalistir(komut);
         }
 
-        //        public void NotDuzKyt()
-        //        {
-        //            OleDbCommand komut = new OleDbCommand($@"
-        //insert into puan(ogr_id,ogr_ad,ogr_soyad,ogr_kurs,alan,puan)
-        //values('" + ogr_id.Text + "','" + ogr_ad.Text + "','" + ogr_soyad.Text + "','" + kurs.Text + "','" + alan.Text + "','" + puan.Text + "')", baglanti);
-        //            KomutCalistir(komut);
-        //        }
-
-
-        public void NotDelete(string ogr_id)
+        public void OgrNotKyt(string ogr_id, 
+                              string ogr_ad, 
+                              string ogr_soyad, 
+                              string kurs, 
+                              string alan, 
+                              string puan)
         {
-            OleDbCommand komut = new OleDbCommand($"delete * from puan where ogr_id='{ogr_id}'", baglanti);
+            OleDbCommand komut = new OleDbCommand($@"insert into puan(ogr_id,ogr_ad,ogr_soyad,ogr_kurs,alan,puan) 
+values('{ogr_id}','{ogr_ad}','{ogr_soyad}','{kurs}','{alan}','{puan}')", baglanti);
             KomutCalistir(komut);
+        }
+
+
+        public void AllDelete(string tablo_ad ,string ogr_id)
+        {
+            OleDbCommand komut = new OleDbCommand($"delete * from {tablo_ad} where ogr_id='{ogr_id}'", baglanti);
+            KomutCalistir(komut);
+        }
+        private DataTable ListAllCalistir(string tablo_ad)
+        {
+            baglanti.Open();
+            OleDbDataAdapter adtr = new OleDbDataAdapter($"select * from {tablo_ad}", baglanti);
+            DataTable tablo = new DataTable();
+            adtr.Fill(tablo);
+            baglanti.Close();
+            return tablo;
         }
 
         public DataTable GetOgrTable()
         {
-            baglanti.Open();
-            OleDbDataAdapter adtr = new OleDbDataAdapter($"select * from ogr", baglanti);
-            DataTable tablo = new DataTable();
-            adtr.Fill(tablo);
-            baglanti.Close();
+           return ListAllCalistir("ogr");
+        }
 
-            return tablo;
+        public DataTable GetPuanTable()
+        {
+            return ListAllCalistir("puan");
         }
     }
 
