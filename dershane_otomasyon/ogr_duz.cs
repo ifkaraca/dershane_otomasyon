@@ -16,5 +16,10 @@ namespace dershane_otomasyon
         {
             InitializeComponent();
         }
+
+        private void ogr_duz_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

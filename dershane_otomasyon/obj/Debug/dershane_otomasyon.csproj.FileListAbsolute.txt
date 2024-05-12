@@ -12,4 +12,13 @@ C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\der
 C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.ana_sayfa.resources
 C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.login.resources
 C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.login2.resources
-C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\bin\Debug\dershane.mdb
+C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.ogr_list.resources
+C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.ogr_duz.resources
+C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.not_duz.resources
+C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.not_list.resources
+C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.ales.resources
+C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.dgs.resources
+C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.kpss.resources
+C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.yks.resources
+C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.veli.resources
+C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\bin\Debug\dershaneas.mdb

@@ -18,7 +18,6 @@ namespace dershane_otomasyon
         kpss g_k_kyt;
         yks g_k_list;
         not_duz g_n_duz;
-        not_kayt g_n_kayt;
         not_list g_n_list;
         veli g_odeme;
         ogr_duz g_ogr_duz;
@@ -149,7 +148,7 @@ namespace dershane_otomasyon
             if (notExpand == false)
             {
                 pnl_not.Height += 10;
-                if (pnl_not.Height >= 203)
+                if (pnl_not.Height >= 150)
                 {
                     notT.Stop();
                     notExpand = true;
@@ -279,17 +278,6 @@ namespace dershane_otomasyon
         {
             not_duz.BackColor = Color.FromArgb(38, 38, 38);
         }
-
-        private void not_kyt_MouseEnter(object sender, EventArgs e)
-        {
-            not_kyt.BackColor = Color.FromArgb(30, 30, 30);
-        }
-
-        private void not_kyt_MouseLeave(object sender, EventArgs e)
-        {
-            not_kyt.BackColor = Color.FromArgb(38, 38, 38);
-        }
-
         private void not_list_MouseEnter(object sender, EventArgs e)
         {
             not_list.BackColor = Color.FromArgb(30, 30, 30);
@@ -497,26 +485,6 @@ namespace dershane_otomasyon
             g_n_duz=null;
         }
 
-        private void not_kyt_Click(object sender, EventArgs e)
-        {
-            if(g_n_kayt == null)
-            {
-                g_n_kayt = new not_kayt();
-                g_n_kayt.FormClosed += G_n_kayt_FormClosed;
-                g_n_kayt .MdiParent=this;
-                g_n_kayt.Dock = DockStyle.Fill;
-                g_n_kayt .Show();
-            }
-            else
-            {
-                g_n_kayt.Activate();
-            }
-        }
-
-        private void G_n_kayt_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            g_n_kayt=null;
-        }
 
         private void not_list_Click(object sender, EventArgs e)
         {

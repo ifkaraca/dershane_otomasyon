@@ -66,12 +66,10 @@
             this.not_down = new System.Windows.Forms.PictureBox();
             this.not_up = new System.Windows.Forms.PictureBox();
             this.but_not = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.not_kyt = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.not_list = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.not_duz = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.not_list = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.but_odeme = new System.Windows.Forms.Button();
             this.ogrT = new System.Windows.Forms.Timer(this.components);
@@ -102,9 +100,8 @@
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.not_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.not_up)).BeginInit();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -537,13 +534,12 @@
             // 
             this.pnl_not.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.pnl_not.Controls.Add(this.panel6);
-            this.pnl_not.Controls.Add(this.panel7);
-            this.pnl_not.Controls.Add(this.panel8);
             this.pnl_not.Controls.Add(this.panel9);
+            this.pnl_not.Controls.Add(this.panel8);
             this.pnl_not.Location = new System.Drawing.Point(0, 151);
             this.pnl_not.Margin = new System.Windows.Forms.Padding(0);
             this.pnl_not.Name = "pnl_not";
-            this.pnl_not.Size = new System.Drawing.Size(252, 43);
+            this.pnl_not.Size = new System.Drawing.Size(252, 41);
             this.pnl_not.TabIndex = 7;
             // 
             // panel6
@@ -597,34 +593,34 @@
             this.but_not.MouseEnter += new System.EventHandler(this.but_not_MouseEnter);
             this.but_not.MouseLeave += new System.EventHandler(this.but_not_MouseLeave);
             // 
-            // panel7
+            // panel9
             // 
-            this.panel7.Controls.Add(this.not_kyt);
-            this.panel7.Location = new System.Drawing.Point(3, 52);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(252, 43);
-            this.panel7.TabIndex = 4;
+            this.panel9.Controls.Add(this.not_duz);
+            this.panel9.Location = new System.Drawing.Point(3, 52);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(252, 43);
+            this.panel9.TabIndex = 7;
             // 
-            // not_kyt
+            // not_duz
             // 
-            this.not_kyt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.not_kyt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.not_kyt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.not_kyt.ForeColor = System.Drawing.Color.White;
-            this.not_kyt.Image = ((System.Drawing.Image)(resources.GetObject("not_kyt.Image")));
-            this.not_kyt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.not_kyt.Location = new System.Drawing.Point(-11, -20);
-            this.not_kyt.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
-            this.not_kyt.Name = "not_kyt";
-            this.not_kyt.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.not_kyt.Size = new System.Drawing.Size(273, 85);
-            this.not_kyt.TabIndex = 3;
-            this.not_kyt.Text = "           Not Kayıt";
-            this.not_kyt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.not_kyt.UseVisualStyleBackColor = false;
-            this.not_kyt.Click += new System.EventHandler(this.not_kyt_Click);
-            this.not_kyt.MouseEnter += new System.EventHandler(this.not_kyt_MouseEnter);
-            this.not_kyt.MouseLeave += new System.EventHandler(this.not_kyt_MouseLeave);
+            this.not_duz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.not_duz.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.not_duz.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.not_duz.ForeColor = System.Drawing.Color.White;
+            this.not_duz.Image = ((System.Drawing.Image)(resources.GetObject("not_duz.Image")));
+            this.not_duz.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.not_duz.Location = new System.Drawing.Point(-11, -20);
+            this.not_duz.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
+            this.not_duz.Name = "not_duz";
+            this.not_duz.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.not_duz.Size = new System.Drawing.Size(273, 85);
+            this.not_duz.TabIndex = 3;
+            this.not_duz.Text = "           Düzenle";
+            this.not_duz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.not_duz.UseVisualStyleBackColor = false;
+            this.not_duz.Click += new System.EventHandler(this.not_duz_Click);
+            this.not_duz.MouseEnter += new System.EventHandler(this.not_duz_MouseEnter);
+            this.not_duz.MouseLeave += new System.EventHandler(this.not_duz_MouseLeave);
             // 
             // panel8
             // 
@@ -655,39 +651,10 @@
             this.not_list.MouseEnter += new System.EventHandler(this.not_list_MouseEnter);
             this.not_list.MouseLeave += new System.EventHandler(this.not_list_MouseLeave);
             // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.not_duz);
-            this.panel9.Location = new System.Drawing.Point(3, 150);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(252, 43);
-            this.panel9.TabIndex = 7;
-            // 
-            // not_duz
-            // 
-            this.not_duz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.not_duz.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.not_duz.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.not_duz.ForeColor = System.Drawing.Color.White;
-            this.not_duz.Image = ((System.Drawing.Image)(resources.GetObject("not_duz.Image")));
-            this.not_duz.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.not_duz.Location = new System.Drawing.Point(-11, -20);
-            this.not_duz.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
-            this.not_duz.Name = "not_duz";
-            this.not_duz.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.not_duz.Size = new System.Drawing.Size(273, 85);
-            this.not_duz.TabIndex = 3;
-            this.not_duz.Text = "           Düzenle";
-            this.not_duz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.not_duz.UseVisualStyleBackColor = false;
-            this.not_duz.Click += new System.EventHandler(this.not_duz_Click);
-            this.not_duz.MouseEnter += new System.EventHandler(this.not_duz_MouseEnter);
-            this.not_duz.MouseLeave += new System.EventHandler(this.not_duz_MouseLeave);
-            // 
             // panel10
             // 
             this.panel10.Controls.Add(this.but_odeme);
-            this.panel10.Location = new System.Drawing.Point(0, 194);
+            this.panel10.Location = new System.Drawing.Point(0, 192);
             this.panel10.Margin = new System.Windows.Forms.Padding(0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(252, 43);
@@ -707,7 +674,7 @@
             this.but_odeme.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
             this.but_odeme.Size = new System.Drawing.Size(273, 85);
             this.but_odeme.TabIndex = 3;
-            this.but_odeme.Text = "           Veli Bilgi";
+            this.but_odeme.Text = "           Veli Mesaj";
             this.but_odeme.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.but_odeme.UseVisualStyleBackColor = false;
             this.but_odeme.Click += new System.EventHandler(this.but_odeme_Click);
@@ -775,9 +742,8 @@
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.not_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.not_up)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -813,8 +779,6 @@
         private System.Windows.Forms.FlowLayoutPanel pnl_not;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button but_not;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button not_kyt;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button not_list;
         private System.Windows.Forms.Panel panel9;

@@ -58,10 +58,10 @@
     <Compile Include="ana_sayfa.Designer.cs">
       <DependentUpon>ana_sayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="dershaneDataSet.Designer.cs">
+    <Compile Include="dershaneasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>dershaneDataSet.xsd</DependentUpon>
+      <DependentUpon>dershaneasDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="dgs.cs">
       <SubType>Form</SubType>
@@ -98,12 +98,6 @@
     </Compile>
     <Compile Include="not_duz.Designer.cs">
       <DependentUpon>not_duz.cs</DependentUpon>
-    </Compile>
-    <Compile Include="not_kayt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="not_kayt.Designer.cs">
-      <DependentUpon>not_kayt.cs</DependentUpon>
     </Compile>
     <Compile Include="not_list.cs">
       <SubType>Form</SubType>
@@ -143,11 +137,20 @@
     <Compile Include="yks.Designer.cs">
       <DependentUpon>yks.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ales.resx">
+      <DependentUpon>ales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ana_sayfa.resx">
       <DependentUpon>ana_sayfa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="dgs.resx">
+      <DependentUpon>dgs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kpss.resx">
+      <DependentUpon>kpss.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -155,8 +158,20 @@
     <EmbeddedResource Include="login2.resx">
       <DependentUpon>login2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="not_duz.resx">
+      <DependentUpon>not_duz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="not_list.resx">
+      <DependentUpon>not_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogr_duz.resx">
+      <DependentUpon>ogr_duz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ogr_kyt.resx">
       <DependentUpon>ogr_kyt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogr_list.resx">
+      <DependentUpon>ogr_list.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -167,16 +182,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="dershaneDataSet.xsc">
-      <DependentUpon>dershaneDataSet.xsd</DependentUpon>
+    <EmbeddedResource Include="veli.resx">
+      <DependentUpon>veli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yks.resx">
+      <DependentUpon>yks.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dershaneasDataSet.xsc">
+      <DependentUpon>dershaneasDataSet.xsd</DependentUpon>
     </None>
-    <None Include="dershaneDataSet.xsd">
+    <None Include="dershaneasDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dershaneDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>dershaneasDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="dershaneDataSet.xss">
-      <DependentUpon>dershaneDataSet.xsd</DependentUpon>
+    <None Include="dershaneasDataSet.xss">
+      <DependentUpon>dershaneasDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -192,7 +213,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dershane.mdb">
+    <Content Include="dershaneas.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

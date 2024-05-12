@@ -19,7 +19,7 @@ namespace dershane_otomasyon
         {
             InitializeComponent();
         }
-        OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dershane.mdb");
+        OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dershaneas.mdb");
         
         
         private void button2_Click(object sender, EventArgs e)
@@ -60,12 +60,14 @@ namespace dershane_otomasyon
                 alan.Items.Clear();
                 alan.Items.Add("Sayısal");
                 alan.Items.Add("Eşit Ağırlık");
+                alan.Items.Add("Sözel");
             }
             else if (kurs.SelectedItem.ToString() == "Ales")
             {
                 alan.Items.Clear();
                 alan.Items.Add("Sayısal");
                 alan.Items.Add("Eşit Ağırlık");
+                alan.Items.Add("Sözel");
             }
         }
 
