@@ -21,4 +21,3 @@ C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\der
 C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.kpss.resources
 C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.yks.resources
 C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\obj\Debug\dershane_otomasyon.veli.resources
-C:\Users\ifkar\Desktop\proje\dershane_otomasyon\dershane_otomasyon\bin\Debug\dershaneas.mdb

@@ -18,6 +18,8 @@ namespace dershane_otomasyon
             InitializeComponent();
         }
         OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dershaneas.mdb");
+        DataTable tablo = new DataTable();
+        DbHelper dbHelper = new DbHelper();
         private void button4_Click(object sender, EventArgs e)
         {
             baglanti.Open();
@@ -25,6 +27,8 @@ namespace dershane_otomasyon
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Kayıt başarılı bir şekilde yapıldı", "Kayıt");
+            tablo.Clear();
+            listele();
         }
 
         private void kurs_SelectedIndexChanged(object sender, EventArgs e)
@@ -65,6 +69,25 @@ namespace dershane_otomasyon
             kurs.Text = "";
             alan.Text = "";
             puan.Text = "";
+        }
+        private void listele()
+        {
+            baglanti.Open();
+            OleDbDataAdapter adtr = new OleDbDataAdapter("select * from puan", baglanti);
+            adtr.Fill(tablo);
+            dataGridView1.DataSource = tablo;
+            baglanti.Close();
+        }
+        private void not_duz_Load(object sender, EventArgs e)
+        {
+            listele();
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            dbHelper.NotDelete(dataGridView1.CurrentRow.Cells["ogr_id"].Value.ToString());
+            MessageBox.Show("Kayıt başarılı bir şekilde silindi", "Silme İşlemi");
+            listele();
         }
     }
 }

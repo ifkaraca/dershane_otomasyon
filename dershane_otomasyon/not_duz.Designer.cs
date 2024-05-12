@@ -370,6 +370,7 @@
             this.delete.TabIndex = 237;
             this.delete.Text = "         SİL";
             this.delete.UseVisualStyleBackColor = true;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // guncelle
             // 
@@ -548,6 +549,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "not_duz";
             this.Text = "not_duz";
+            this.Load += new System.EventHandler(this.not_duz_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

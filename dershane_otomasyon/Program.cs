@@ -16,7 +16,7 @@ namespace dershane_otomasyon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());
+            Application.Run(new Form1());
         }
     }
 }

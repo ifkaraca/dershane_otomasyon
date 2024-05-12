@@ -36,6 +36,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -80,24 +82,22 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ogr_id = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.arama = new System.Windows.Forms.TextBox();
             this.adres = new System.Windows.Forms.TextBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel13.SuspendLayout();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel16
@@ -120,6 +120,7 @@
             this.button3.TabIndex = 175;
             this.button3.Text = "         SİL";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -144,6 +145,7 @@
             this.button1.TabIndex = 134;
             this.button1.Text = "         YENİLE";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label13
             // 
@@ -181,6 +183,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1205, 46);
             this.panel1.TabIndex = 130;
+            // 
+            // panel8
+            // 
+            this.panel8.Location = new System.Drawing.Point(726, 46);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(10, 313);
+            this.panel8.TabIndex = 232;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1159, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -644,15 +665,15 @@
             this.panel5.Size = new System.Drawing.Size(50, 1);
             this.panel5.TabIndex = 227;
             // 
-            // textBox2
+            // ogr_id
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(1102, 61);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(50, 13);
-            this.textBox2.TabIndex = 226;
+            this.ogr_id.BackColor = System.Drawing.SystemColors.Control;
+            this.ogr_id.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ogr_id.Location = new System.Drawing.Point(1102, 61);
+            this.ogr_id.Margin = new System.Windows.Forms.Padding(2);
+            this.ogr_id.Name = "ogr_id";
+            this.ogr_id.Size = new System.Drawing.Size(50, 13);
+            this.ogr_id.TabIndex = 226;
             // 
             // label22
             // 
@@ -684,16 +705,16 @@
             this.pictureBox2.TabIndex = 230;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox1
+            // arama
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(918, 112);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 19);
-            this.textBox1.TabIndex = 229;
+            this.arama.BackColor = System.Drawing.SystemColors.Control;
+            this.arama.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.arama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.arama.Location = new System.Drawing.Point(918, 112);
+            this.arama.Margin = new System.Windows.Forms.Padding(2);
+            this.arama.Name = "arama";
+            this.arama.Size = new System.Drawing.Size(163, 19);
+            this.arama.TabIndex = 229;
             // 
             // adres
             // 
@@ -736,25 +757,6 @@
             this.panel12.Size = new System.Drawing.Size(244, 1);
             this.panel12.TabIndex = 221;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1159, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 46);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel8
-            // 
-            this.panel8.Location = new System.Drawing.Point(726, 46);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(10, 313);
-            this.panel8.TabIndex = 232;
-            // 
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(183)))), ((int)(((byte)(10)))));
@@ -771,10 +773,10 @@
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.arama);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.ogr_id);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
@@ -833,10 +835,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -895,11 +897,11 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox ogr_id;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox arama;
         private System.Windows.Forms.TextBox adres;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel14;

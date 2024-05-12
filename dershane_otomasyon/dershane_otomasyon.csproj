@@ -58,11 +58,7 @@
     <Compile Include="ana_sayfa.Designer.cs">
       <DependentUpon>ana_sayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="dershaneasDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dershaneasDataSet.xsd</DependentUpon>
-    </Compile>
+    <Compile Include="DbHelper.cs" />
     <Compile Include="dgs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,17 +184,6 @@
     <EmbeddedResource Include="yks.resx">
       <DependentUpon>yks.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="dershaneasDataSet.xsc">
-      <DependentUpon>dershaneasDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="dershaneasDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dershaneasDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dershaneasDataSet.xss">
-      <DependentUpon>dershaneasDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -211,11 +196,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="dershaneas.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
