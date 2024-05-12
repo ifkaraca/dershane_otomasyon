@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|c:\\users\\ifkar\\desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\ogr_duz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|solutionrelative:dershane_otomasyon\\ogr_duz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|c:\\users\\ifkar\\desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\ogr_duz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|solutionrelative:dershane_otomasyon\\ogr_duz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\ogr_kyt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|solutionrelative:dershane_otomasyon\\ogr_kyt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|c:\\users\\ifkar\\desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|solutionrelative:dershane_otomasyon\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\ogr_kyt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|solutionrelative:dershane_otomasyon\\ogr_kyt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\msghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "DbHelper.cs",
               "DocumentMoniker": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\DbHelper.cs",
               "RelativeDocumentMoniker": "dershane_otomasyon\\DbHelper.cs",
               "ToolTip": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\DbHelper.cs",
               "RelativeToolTip": "dershane_otomasyon\\DbHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAAAJAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAwBcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T10:18:42.044Z",
               "IsPinned": true,
@@ -36,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "MsgHelper.cs",
               "DocumentMoniker": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\MsgHelper.cs",
               "RelativeDocumentMoniker": "dershane_otomasyon\\MsgHelper.cs",
@@ -50,6 +66,56 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ogr_duz.cs",
+              "DocumentMoniker": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\ogr_duz.cs",
+              "RelativeDocumentMoniker": "dershane_otomasyon\\ogr_duz.cs",
+              "ToolTip": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\ogr_duz.cs",
+              "RelativeToolTip": "dershane_otomasyon\\ogr_duz.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAD4vzgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T22:56:07.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ogr_duz.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\ogr_duz.cs",
+              "RelativeDocumentMoniker": "dershane_otomasyon\\ogr_duz.cs",
+              "ToolTip": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\ogr_duz.cs [Design]",
+              "RelativeToolTip": "dershane_otomasyon\\ogr_duz.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T22:56:06.396Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ogr_kyt.cs",
+              "DocumentMoniker": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\ogr_kyt.cs",
+              "RelativeDocumentMoniker": "dershane_otomasyon\\ogr_kyt.cs",
+              "ToolTip": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\ogr_kyt.cs",
+              "RelativeToolTip": "dershane_otomasyon\\ogr_kyt.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAD4v1gAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T22:52:41.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ogr_kyt.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\ogr_kyt.cs",
+              "RelativeDocumentMoniker": "dershane_otomasyon\\ogr_kyt.cs",
+              "ToolTip": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\ogr_kyt.cs [Design]",
+              "RelativeToolTip": "dershane_otomasyon\\ogr_kyt.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T22:52:29.411Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -117,7 +117,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label21.Location = new System.Drawing.Point(1081, 59);
+            this.label21.Location = new System.Drawing.Point(1031, 59);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(14, 20);
@@ -127,7 +127,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel5.Location = new System.Drawing.Point(1102, 77);
+            this.panel5.Location = new System.Drawing.Point(1052, 77);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(50, 1);
@@ -137,7 +137,7 @@
             // 
             this.id.BackColor = System.Drawing.SystemColors.Control;
             this.id.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.id.Location = new System.Drawing.Point(1102, 60);
+            this.id.Location = new System.Drawing.Point(1052, 60);
             this.id.Margin = new System.Windows.Forms.Padding(2);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(50, 13);
@@ -147,12 +147,12 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label22.Location = new System.Drawing.Point(776, 60);
+            this.label22.Location = new System.Drawing.Point(814, 60);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(307, 20);
+            this.label22.Size = new System.Drawing.Size(216, 20);
             this.label22.TabIndex = 283;
-            this.label22.Text = "ÇAĞRILICAK ÖĞRENCİNİN  NUMARASI";
+            this.label22.Text = "İŞLEM YAPILICAK KAYIT İD";
             // 
             // label25
             // 

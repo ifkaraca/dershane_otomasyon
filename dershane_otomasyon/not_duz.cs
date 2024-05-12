@@ -78,7 +78,8 @@ namespace dershane_otomasyon
 
         private void delete_Click(object sender, EventArgs e)
         {
-            dbHelper.AllDelete("puan" , id.Text);
+            int Sil_id = int.Parse(id.Text);
+            dbHelper.AllDeleteSayi("puan" , "id" ,Sil_id);
             MsgHelper.IslemMsg("silindi", "Silme");
             listele();
         }

@@ -58,9 +58,14 @@ values('{ogr_id}','{ogr_ad}','{ogr_soyad}','{kurs}','{alan}','{puan}')", baglant
         }
 
 
-        public void AllDelete(string tablo_ad ,string ogr_id)
+        public void AllDelete(string tablo_ad ,string sart, string deger)
         {
-            OleDbCommand komut = new OleDbCommand($"delete * from {tablo_ad} where ogr_id='{ogr_id}'", baglanti);
+            OleDbCommand komut = new OleDbCommand($"delete * from {tablo_ad} where {sart}='{deger}'", baglanti);
+            KomutCalistir(komut);
+        }
+        public void AllDeleteSayi(string tablo_ad, string sart, int deger)
+        {
+            OleDbCommand komut = new OleDbCommand($"delete * from {tablo_ad} where {sart}={deger}", baglanti);
             KomutCalistir(komut);
         }
         private DataTable ListAllCalistir(string tablo_ad)

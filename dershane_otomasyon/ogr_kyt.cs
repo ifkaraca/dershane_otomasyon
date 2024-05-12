@@ -19,7 +19,7 @@ namespace dershane_otomasyon
         {
             InitializeComponent();
         }
-        OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dershaneas.mdb");
+        MsgHelper msgHelper = new MsgHelper();
         DbHelper dbHelper = new DbHelper();
 
 
@@ -87,13 +87,8 @@ namespace dershane_otomasyon
                             veli_telno.Text,
                             kurs.Text,
                             alan.Text);
-            //baglanti.Open();
-            //OleDbCommand komut=new OleDbCommand("insert into ogr(ogr_ad,ogr_soyad,cinsiyet,d_tarihi,telefon,email,adres,veli_ad,veli_soyad,veli_tlfn,kurs_ad,alani) values" +
-            //    "('"+ ogr_ad.Text +"', '"+ ogr_soyad.Text +"','"+ cinsiyet.Text +"','"+ dogumTarihi +"','"+ ogr_telno.Text +"','"+ mail.Text +"','"+ adres.Text +"','"+ veli_ad.Text +"','"+ veli_soyad.Text +"','"+ veli_telno.Text +"','"+ kurs.Text +"','"+ alan.Text +"')" , baglanti);
-            //komut.ExecuteNonQuery();
-            
-            //baglanti.Close();
-            MessageBox.Show("Kayıt başarılı bir şekilde yapıldı", "Kayıt");
+
+            msgHelper.IslemMsg("eklendi", "Ekleme");
         }
     }
 }

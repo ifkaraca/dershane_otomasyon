@@ -48,7 +48,8 @@ namespace dershane_otomasyon
 
         private void button3_Click(object sender, EventArgs e)
         {
-            dbHelper.AllDelete("ogr",ogr_id.Text);
+            int ogrSayi = int.Parse(ogr_id.Text);
+            dbHelper.AllDeleteSayi("ogr", "ogr_id",ogrSayi);
             msgHelper.IslemMsg("silindi", "Silme");
             listele();
         }

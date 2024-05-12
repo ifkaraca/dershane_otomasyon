@@ -80,6 +80,8 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.ogr_sayisi = new System.Windows.Forms.Label();
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -632,11 +634,31 @@
             this.label25.TabIndex = 131;
             this.label25.Text = ":";
             // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(1056, 48);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(110, 13);
+            this.label28.TabIndex = 136;
+            this.label28.Text = "Kayıtlı Öğrenci Sayısı :";
+            // 
+            // ogr_sayisi
+            // 
+            this.ogr_sayisi.AutoSize = true;
+            this.ogr_sayisi.Location = new System.Drawing.Point(1163, 48);
+            this.ogr_sayisi.Name = "ogr_sayisi";
+            this.ogr_sayisi.Size = new System.Drawing.Size(17, 13);
+            this.ogr_sayisi.TabIndex = 137;
+            this.ogr_sayisi.Text = "xx";
+            // 
             // ogr_kyt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1205, 619);
+            this.Controls.Add(this.ogr_sayisi);
+            this.Controls.Add(this.label28);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.panel9);
@@ -751,5 +773,7 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label ogr_sayisi;
     }
 }
