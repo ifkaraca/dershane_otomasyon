@@ -21,7 +21,7 @@ namespace dershane_otomasyon
         DbHelper dbHelper = new DbHelper();
         private void listele()
         {
-            DataTable doluTablo = dbHelper.GetOgrTable();
+            DataTable doluTablo = dbHelper.ListAllCalistir("ogr");
             dataGridView1.DataSource = doluTablo;
         }
         private void ogr_duz_Load(object sender, EventArgs e)

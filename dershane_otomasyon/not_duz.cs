@@ -68,7 +68,7 @@ namespace dershane_otomasyon
         }
         private void listele()
         {
-            DataTable doluTablo = dbHelper.GetPuanTable();
+            DataTable doluTablo = dbHelper.ListAllCalistir("puan");
             dataGridView1.DataSource = doluTablo;
         }
         private void not_duz_Load(object sender, EventArgs e)

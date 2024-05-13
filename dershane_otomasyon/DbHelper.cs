@@ -68,7 +68,7 @@ values('{ogr_id}','{ogr_ad}','{ogr_soyad}','{kurs}','{alan}','{puan}')", baglant
             OleDbCommand komut = new OleDbCommand($"delete * from {tablo_ad} where {sart}={deger}", baglanti);
             KomutCalistir(komut);
         }
-        private DataTable ListAllCalistir(string tablo_ad)
+        public DataTable ListAllCalistir(string tablo_ad)
         {
             baglanti.Open();
             OleDbDataAdapter adtr = new OleDbDataAdapter($"select * from {tablo_ad}", baglanti);
@@ -76,17 +76,46 @@ values('{ogr_id}','{ogr_ad}','{ogr_soyad}','{kurs}','{alan}','{puan}')", baglant
             adtr.Fill(tablo);
             baglanti.Close();
             return tablo;
-        }
-
-        public DataTable GetOgrTable()
+        } 
+        public DataTable KursList(string prmtr_kurs)
         {
-           return ListAllCalistir("ogr");
+            baglanti.Open();
+            OleDbDataAdapter adtr = new OleDbDataAdapter($@"select ogr_id, ogr_ad, ogr_soyad, cinsiyet, email, kurs_ad, alani  from ogr 
+            where kurs_ad= '{prmtr_kurs}'", baglanti);
+            DataTable tablo = new DataTable();
+            adtr.Fill(tablo);
+            baglanti.Close();
+            return tablo;
         }
-
-        public DataTable GetPuanTable()
+        public DataTable KursFltr(string prmtr_kurs,  string prmtr_alan)
         {
-            return ListAllCalistir("puan");
+            baglanti.Open();
+            OleDbDataAdapter adtr = new OleDbDataAdapter($@"select ogr_id, ogr_ad, ogr_soyad, cinsiyet, email, kurs_ad, alani  from ogr 
+            where kurs_ad= '{prmtr_kurs}' and alani= '{prmtr_alan}' ", baglanti);
+            DataTable tablo = new DataTable();
+            adtr.Fill(tablo);
+            baglanti.Close();
+            return tablo;
+        }
+        public DataTable KursFltrCins(string prmtr_kurs, string prmtr_alan, string prmtr_cins)
+        {
+            baglanti.Open();
+            OleDbDataAdapter adtr = new OleDbDataAdapter($@"select ogr_id, ogr_ad, ogr_soyad, cinsiyet, email, kurs_ad, alani  from ogr 
+            where kurs_ad= '{prmtr_kurs}' and alani= '{prmtr_alan}' and cinsiyet= '{prmtr_cins}' ", baglanti);
+            DataTable tablo = new DataTable();
+            adtr.Fill(tablo);
+            baglanti.Close();
+            return tablo;
+        }
+        public DataTable KursFltrJustCins(string prmtr_kurs, string prmtr_cins)
+        {
+            baglanti.Open();
+            OleDbDataAdapter adtr = new OleDbDataAdapter($@"select ogr_id, ogr_ad, ogr_soyad, cinsiyet, email, kurs_ad, alani  from ogr 
+            where kurs_ad= '{prmtr_kurs}'  and cinsiyet= '{prmtr_cins}' ", baglanti);
+            DataTable tablo = new DataTable();
+            adtr.Fill(tablo);
+            baglanti.Close();
+            return tablo;
         }
     }
-
 }
