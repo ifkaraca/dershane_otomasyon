@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dershane_otomasyon", "dershane_otomasyon\dershane_otomasyon.csproj", "{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{B2AD6CF2-6CE2-45AF-937B-B11B5FA55B2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2AD6CF2-6CE2-45AF-937B-B11B5FA55B2A}.Debug|Any CPU.ActiveCfg = Debug
+		{B2AD6CF2-6CE2-45AF-937B-B11B5FA55B2A}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
