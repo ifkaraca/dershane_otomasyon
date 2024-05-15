@@ -549,7 +549,6 @@
             this.Controls.Add(this.yenile);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "not_duz";
             this.Text = "not_duz";
             this.Load += new System.EventHandler(this.not_duz_Load);
