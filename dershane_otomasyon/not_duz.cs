@@ -65,6 +65,8 @@ namespace dershane_otomasyon
             kurs.Text = "";
             alan.Text = "";
             puan.Text = "";
+            id.Text = "";
+            arama.Text = "";
         }
         private void listele()
         {
@@ -82,6 +84,12 @@ namespace dershane_otomasyon
             dbHelper.AllDeleteSayi("puan" , "id" ,Sil_id);
             MsgHelper.IslemMsg("silindi", "Silme");
             listele();
+        }
+
+        private void arama_TextChanged(object sender, EventArgs e)
+        {
+            DataTable doluTablo = dbHelper.AllArama("puan",arama.Text);
+            dataGridView1.DataSource = doluTablo;
         }
     }
 }

@@ -83,7 +83,14 @@ namespace dershane_otomasyon
         {
             comboBox1.Text = "";
             comboBox3.Text = "";
+            textBox1.Text = "";
             listele();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            DataTable doluTablo = dbHelper.KursArama("Dgs", textBox1.Text);
+            dataGridView1.DataSource = doluTablo;
         }
     }
 }

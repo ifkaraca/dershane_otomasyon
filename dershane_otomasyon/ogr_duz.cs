@@ -53,5 +53,11 @@ namespace dershane_otomasyon
             msgHelper.IslemMsg("silindi", "Silme");
             listele();
         }
+
+        private void arama_TextChanged(object sender, EventArgs e)
+        {
+            DataTable doluTablo = dbHelper.AllArama("ogr", arama.Text);
+            dataGridView1.DataSource = doluTablo;
+        }
     }
 }

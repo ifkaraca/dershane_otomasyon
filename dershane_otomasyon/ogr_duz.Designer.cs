@@ -715,6 +715,7 @@
             this.arama.Name = "arama";
             this.arama.Size = new System.Drawing.Size(163, 19);
             this.arama.TabIndex = 229;
+            this.arama.TextChanged += new System.EventHandler(this.arama_TextChanged);
             // 
             // adres
             // 

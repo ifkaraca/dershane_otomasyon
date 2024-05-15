@@ -20,7 +20,7 @@ namespace dershane_otomasyon
         DbHelper dbHelper = new DbHelper();
         private void listele()
         {
-            DataTable doluTablo = dbHelper.KursList("Ales");
+            DataTable doluTablo = dbHelper.KursList("Kpss");
             dataGridView1.DataSource = doluTablo;
         }
         private void kpss_Load(object sender, EventArgs e)
@@ -56,7 +56,14 @@ namespace dershane_otomasyon
         {
             comboBox1.Text = "";
             comboBox2.Text = "";
+            textBox1.Text = "";
             listele();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            DataTable doluTablo = dbHelper.KursArama("Kpss", textBox1.Text);
+            dataGridView1.DataSource = doluTablo;
         }
     }
 }

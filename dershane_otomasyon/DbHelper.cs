@@ -57,17 +57,13 @@ values('{ogr_id}','{ogr_ad}','{ogr_soyad}','{kurs}','{alan}','{puan}')", baglant
             KomutCalistir(komut);
         }
 
-
-        public void AllDelete(string tablo_ad ,string sart, string deger)
-        {
-            OleDbCommand komut = new OleDbCommand($"delete * from {tablo_ad} where {sart}='{deger}'", baglanti);
-            KomutCalistir(komut);
-        }
         public void AllDeleteSayi(string tablo_ad, string sart, int deger)
         {
             OleDbCommand komut = new OleDbCommand($"delete * from {tablo_ad} where {sart}={deger}", baglanti);
             KomutCalistir(komut);
         }
+       
+        //Listeleme
         public DataTable ListAllCalistir(string tablo_ad)
         {
             baglanti.Open();
@@ -117,5 +113,55 @@ values('{ogr_id}','{ogr_ad}','{ogr_soyad}','{kurs}','{alan}','{puan}')", baglant
             baglanti.Close();
             return tablo;
         }
+        
+        //Öğrenci listesi
+        public DataTable AllJustCinsFltr(string tbl,string prmtr_cins)
+        {
+            OleDbDataAdapter adtr = new OleDbDataAdapter($@"select *  from {tbl} 
+            where cinsiyet= '{prmtr_cins}' ", baglanti);
+            DataTable tablo = new DataTable();
+            adtr.Fill(tablo);
+            baglanti.Close();
+            return tablo;
+        }
+        public DataTable AllAlanFltr(string tbl,string kurs , string alan)
+        {
+            OleDbDataAdapter adtr = new OleDbDataAdapter($@"select *  from {tbl} 
+            where kurs_ad='{kurs}' and alani= '{alan}' ", baglanti);
+            DataTable tablo = new DataTable();
+            adtr.Fill(tablo);
+            baglanti.Close();
+            return tablo;
+        }
+        public DataTable PuanAlanFltr(string kurs , string alan)
+        {
+            OleDbDataAdapter adtr = new OleDbDataAdapter($@"select *  from puan 
+            where ogr_kurs='{kurs}' and alan= '{alan}' ", baglanti);
+            DataTable tablo = new DataTable();
+            adtr.Fill(tablo);
+            baglanti.Close();
+            return tablo;
+        }
+
+        //Arama
+        public DataTable AllArama(string prmt_tbl,string ad)
+        {
+            OleDbDataAdapter adtr = new OleDbDataAdapter($@"select *  from {prmt_tbl} 
+            Where ogr_ad Like '%{ad}%' ", baglanti);
+            DataTable tablo = new DataTable();
+            adtr.Fill(tablo);
+            baglanti.Close();
+            return tablo;
+        }
+        public DataTable KursArama(string kurs,string ad)
+        {
+            OleDbDataAdapter adtr = new OleDbDataAdapter($@"select ogr_id, ogr_ad, ogr_soyad, cinsiyet, email, kurs_ad, alani from ogr 
+            where kurs_ad = '{kurs}' and ogr_ad like '%{ad}%'", baglanti);
+            DataTable tablo = new DataTable();
+            adtr.Fill(tablo);
+            baglanti.Close();
+            return tablo;
+        }
+
     }
 }
