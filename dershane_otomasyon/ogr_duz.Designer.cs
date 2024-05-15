@@ -133,6 +133,7 @@
             this.button2.TabIndex = 135;
             this.button2.Text = "         GÜNCELLE";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -590,6 +591,7 @@
             this.kurs.Name = "kurs";
             this.kurs.Size = new System.Drawing.Size(130, 21);
             this.kurs.TabIndex = 216;
+            this.kurs.SelectedIndexChanged += new System.EventHandler(this.kurs_SelectedIndexChanged);
             // 
             // mail
             // 

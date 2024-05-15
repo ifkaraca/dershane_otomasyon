@@ -59,5 +59,98 @@ namespace dershane_otomasyon
             DataTable doluTablo = dbHelper.AllArama("ogr", arama.Text);
             dataGridView1.DataSource = doluTablo;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string dogumTarihi = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+            try
+            {
+                int Gun_id = int.Parse(ogr_id.Text);
+                if (!string.IsNullOrWhiteSpace(ogr_ad.Text))
+                {
+                    dbHelper.AllGunc("ogr", "ogr_ad", ogr_ad.Text, "ogr_id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(ogr_soyad.Text))
+                {
+                    dbHelper.AllGunc("ogr", "ogr_soyad", ogr_soyad.Text, "ogr_id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(cinsiyet.Text))
+                {
+                    dbHelper.AllGunc("ogr", "cinsiyet", cinsiyet.Text, "ogr_id", Gun_id);
+                }
+                //if (!string.IsNullOrWhiteSpace(dateTimePicker1.Text))
+                //{
+                //    dbHelper.AllGunc("ogr", "d_tarihi", dogumTarihi, "ogr_id", Gun_id);
+                //}
+                if (!string.IsNullOrWhiteSpace(veli_ad.Text))
+                {
+                    dbHelper.AllGunc("ogr", "veli_ad", veli_ad.Text, "ogr_id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(veli_soyad.Text))
+                {
+                    dbHelper.AllGunc("ogr", "veli_soyad", veli_soyad.Text, "ogr_id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(veli_telno.Text))
+                {
+                    dbHelper.AllGunc("ogr", "veli_tlfn", veli_telno.Text, "ogr_id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(ogr_telno.Text))
+                {
+                    dbHelper.AllGunc("ogr", "telefon", ogr_telno.Text, "ogr_id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(mail.Text))
+                {
+                    dbHelper.AllGunc("ogr", "email", mail.Text, "ogr_id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(adres.Text))
+                {
+                    dbHelper.AllGunc("ogr", "adres", adres.Text, "ogr_id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(kurs.Text))
+                {
+                    dbHelper.AllGunc("ogr", "kurs_ad", kurs.Text, "ogr_id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(alan.Text))
+                {
+                    dbHelper.AllGunc("ogr", "alani", alan.Text, "ogr_id", Gun_id);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }
+            msgHelper.IslemMsg("Güncellendi", "Güncelleme");
+            listele();
+        }
+
+        private void kurs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (kurs.SelectedItem.ToString() == "Kpss")
+            {
+                alan.Items.Clear();
+                alan.Items.Add("Alansız");
+            }
+            else if (kurs.SelectedItem.ToString() == "Yks")
+            {
+                alan.Items.Clear();
+                alan.Items.Add("Sayısal");
+                alan.Items.Add("Eşit Ağırlık");
+                alan.Items.Add("Sözel");
+            }
+            else if (kurs.SelectedItem.ToString() == "Dgs")
+            {
+                alan.Items.Clear();
+                alan.Items.Add("Sayısal");
+                alan.Items.Add("Eşit Ağırlık");
+                alan.Items.Add("Sözel");
+            }
+            else if (kurs.SelectedItem.ToString() == "Ales")
+            {
+                alan.Items.Clear();
+                alan.Items.Add("Sayısal");
+                alan.Items.Add("Eşit Ağırlık");
+                alan.Items.Add("Sözel");
+            }
+        }
     }
 }

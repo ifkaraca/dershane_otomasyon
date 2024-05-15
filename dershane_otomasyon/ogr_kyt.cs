@@ -21,7 +21,7 @@ namespace dershane_otomasyon
         }
         MsgHelper msgHelper = new MsgHelper();
         DbHelper dbHelper = new DbHelper();
-
+        ogr_list ogr_List = new ogr_list();
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -39,7 +39,14 @@ namespace dershane_otomasyon
         }
         private void ogr_kyt_Load(object sender, EventArgs e)
         {
-            
+            OleDbConnection baglanti = new OleDbConnection($"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dershaneas.mdb");
+            baglanti.Open();
+            string query = "Select count(*) from ogr";
+            OleDbCommand komut = new OleDbCommand(query, baglanti);
+            int ogr_sayi = Convert.ToInt32(komut.ExecuteScalar());
+            ogr_sayisi.Text = ogr_sayi.ToString();
+            baglanti.Close();
+
         }
 
         private void kurs_SelectedIndexChanged(object sender, EventArgs e)
@@ -89,6 +96,8 @@ namespace dershane_otomasyon
                             alan.Text);
 
             msgHelper.IslemMsg("eklendi", "Ekleme");
+
+          ogr_List.Activate();
         }
     }
 }

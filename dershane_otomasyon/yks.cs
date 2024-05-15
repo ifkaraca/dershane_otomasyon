@@ -92,5 +92,16 @@ namespace dershane_otomasyon
             DataTable doluTablo = dbHelper.KursArama("Yks", textBox1.Text);
             dataGridView1.DataSource = doluTablo;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PrintDialog printDialog = new PrintDialog();
+            printDialog.Document = printDocument1;
+
+            if (printDialog.ShowDialog() == DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
+        }
     }
 }

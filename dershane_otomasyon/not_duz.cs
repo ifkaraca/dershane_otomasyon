@@ -9,6 +9,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace dershane_otomasyon
 {
@@ -67,6 +68,7 @@ namespace dershane_otomasyon
             puan.Text = "";
             id.Text = "";
             arama.Text = "";
+            listele();
         }
         private void listele()
         {
@@ -90,6 +92,44 @@ namespace dershane_otomasyon
         {
             DataTable doluTablo = dbHelper.AllArama("puan",arama.Text);
             dataGridView1.DataSource = doluTablo;
+        }
+
+        private void guncelle_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int Gun_id = int.Parse(id.Text);
+                if (!string.IsNullOrWhiteSpace(ogr_ad.Text))
+                {
+                    dbHelper.AllGunc("puan", "ogr_ad", ogr_ad.Text, "id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(ogr_soyad.Text))
+                {
+                    dbHelper.AllGunc("puan", "ogr_soyad", ogr_soyad.Text, "id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(ogr_id.Text))
+                {
+                    dbHelper.AllGunc("puan", "ogr_id", ogr_id.Text, "id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(kurs.Text))
+                {
+                    dbHelper.AllGunc("puan", "ogr_kurs", kurs.Text, "id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(alan.Text))
+                {
+                    dbHelper.AllGunc("puan", "alan", alan.Text, "id", Gun_id);
+                }
+                if (!string.IsNullOrWhiteSpace(puan.Text))
+                {
+                    dbHelper.AllGunc("puan", "puan", puan.Text, "id", Gun_id);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }
+            MsgHelper.IslemMsg("Güncellendi", "Güncelleme");
+            listele();
         }
     }
 }

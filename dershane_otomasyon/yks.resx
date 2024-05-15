@@ -259,7 +259,7 @@
   <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHzSURBVFhH7ZU9
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHzSURBVFhH7ZU9
         S8QwGMeri+giDqKDoJujg5t+AlGvL3AgvqGbrjc5yYGDk9rGN04UR7+E4DuCmzg6ieC1Te48XFyU+kRz
         UnO566XtlRv8ww9KnuSfp0meRKmllIkHVQufaJZLNAt7ktiaSY61rfwAs5OTse2MgskbZxqGgo6cIWZb
         n8bQYxsMfOKMIuA+ZLNeK7MPlm7iCbFReFTLGWH2wdItnBGZREG13EVmHyzdIisikyjATy0x+2Cld91e
@@ -274,7 +274,7 @@
   <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAOcSURBVFhHvVdb
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAOcSURBVFhHvVdb
         aBNBFI0vfINKa9vdbSkiiH9CEUXxBYr4QEXx8aNUhZjsbNCC/SiK1j8fiKAoih/ij4KCqB/V6keyu2lF
         rUiLYlWQ+gAp+iVWU7Wt505v0tltmiZt2gOHJPfce2d2du7MTSBXlEcrJ5XaYrlmW/t1R9Rotjip2+Ko
         bpsHNNtcYjRWTWbX7GE0hnQtJtYUNYRms8mLW9vHGY61TXfFIwz6G+zJwA5M6L7miM0UxxkGBp7geTIY
@@ -296,7 +296,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAN8SURBVFhHtZZb
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAN8SURBVFhHtZZb
         qExRGMc3iVlrz+AgyS1KySXeeEMSJbfypsSDFLnEq3ILJYoi8eIWKQmHM2vvcU8iksuDuwep06FTnJOH
         ObP3Nsv/27PmnH32/mbMMeOrXzN7/7/1fd/ee61vLatW0/etVKDkUt+1j/iOuBM48pPvyHbw3XfsD/h1
         wAHoC+A7wAyr3/TNzIhSUtkBdE0o+c135T4aa8L03bSyBiHQDgTsTCSonU7PEVu0tvqZsLVZ+NSO/YAJ
@@ -315,4 +315,7 @@
         QmCC
 </value>
   </data>
+  <metadata name="printDocument1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

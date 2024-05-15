@@ -163,5 +163,13 @@ values('{ogr_id}','{ogr_ad}','{ogr_soyad}','{kurs}','{alan}','{puan}')", baglant
             return tablo;
         }
 
+        //güncelleme
+        public void AllGunc(string tbl, string degisecek ,string yeni,string sart ,int sart_deger)
+        {
+            OleDbCommand komut = new OleDbCommand($@"UPDATE {tbl} SET {degisecek}='{yeni}' WHERE {sart} = {sart_deger}", baglanti);
+            KomutCalistir(komut);
+        }
+        
+
     }
 }

@@ -384,6 +384,7 @@
             this.guncelle.TabIndex = 236;
             this.guncelle.Text = "         GÜNCELLE";
             this.guncelle.UseVisualStyleBackColor = true;
+            this.guncelle.Click += new System.EventHandler(this.guncelle_Click);
             // 
             // yenile
             // 
