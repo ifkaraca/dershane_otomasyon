@@ -832,6 +832,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ogr_duz";
             this.Text = "ogr_duz";
             this.Load += new System.EventHandler(this.ogr_duz_Load);

@@ -282,6 +282,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "not_list";
             this.Text = "not_list";
             this.Load += new System.EventHandler(this.not_list_Load);

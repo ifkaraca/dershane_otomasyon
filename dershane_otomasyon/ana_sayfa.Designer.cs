@@ -160,6 +160,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ana_sayfa";
             this.Text = "ana_sayfa";
             this.Load += new System.EventHandler(this.ana_sayfa_Load);
