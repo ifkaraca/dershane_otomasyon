@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|c:\\users\\ifkar\\desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D08A0FEF-8DCA-4634-B40F-C0B15C17990E}|dershane_otomasyon\\dershane_otomasyon.csproj|solutionrelative:dershane_otomasyon\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "dershane_otomasyon\\DbHelper.cs",
               "ToolTip": "C:\\Users\\ifkar\\Desktop\\proje\\dershane_otomasyon\\dershane_otomasyon\\DbHelper.cs",
               "RelativeToolTip": "dershane_otomasyon\\DbHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKoAAAAJAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAuwKoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T10:18:42.044Z",
               "IsPinned": true,
@@ -45,8 +45,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T21:18:51.687Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",

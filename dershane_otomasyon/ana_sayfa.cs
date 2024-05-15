@@ -19,7 +19,7 @@ namespace dershane_otomasyon
         }
         ogr_kyt ogr = new ogr_kyt();
         ogr_list list = new ogr_list();
-        veli vel = new veli();
+        ogr_duz vel = new ogr_duz();
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             

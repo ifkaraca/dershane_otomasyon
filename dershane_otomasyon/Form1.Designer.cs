@@ -70,8 +70,6 @@
             this.not_duz = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.not_list = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.but_odeme = new System.Windows.Forms.Button();
             this.ogrT = new System.Windows.Forms.Timer(this.components);
             this.sidebarT = new System.Windows.Forms.Timer(this.components);
             this.kursT = new System.Windows.Forms.Timer(this.components);
@@ -102,7 +100,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.not_up)).BeginInit();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -161,7 +158,6 @@
             this.sideBar.Controls.Add(this.pnl_ogr);
             this.sideBar.Controls.Add(this.pnl_kurs);
             this.sideBar.Controls.Add(this.pnl_not);
-            this.sideBar.Controls.Add(this.panel10);
             this.sideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBar.Location = new System.Drawing.Point(0, 47);
             this.sideBar.Margin = new System.Windows.Forms.Padding(0);
@@ -651,36 +647,6 @@
             this.not_list.MouseEnter += new System.EventHandler(this.not_list_MouseEnter);
             this.not_list.MouseLeave += new System.EventHandler(this.not_list_MouseLeave);
             // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.but_odeme);
-            this.panel10.Location = new System.Drawing.Point(0, 192);
-            this.panel10.Margin = new System.Windows.Forms.Padding(0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(252, 43);
-            this.panel10.TabIndex = 4;
-            // 
-            // but_odeme
-            // 
-            this.but_odeme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.but_odeme.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_odeme.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.but_odeme.ForeColor = System.Drawing.Color.White;
-            this.but_odeme.Image = ((System.Drawing.Image)(resources.GetObject("but_odeme.Image")));
-            this.but_odeme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.but_odeme.Location = new System.Drawing.Point(-11, -20);
-            this.but_odeme.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
-            this.but_odeme.Name = "but_odeme";
-            this.but_odeme.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.but_odeme.Size = new System.Drawing.Size(273, 85);
-            this.but_odeme.TabIndex = 3;
-            this.but_odeme.Text = "           Veli Mesaj";
-            this.but_odeme.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.but_odeme.UseVisualStyleBackColor = false;
-            this.but_odeme.Click += new System.EventHandler(this.but_odeme_Click);
-            this.but_odeme.MouseEnter += new System.EventHandler(this.but_odeme_MouseEnter);
-            this.but_odeme.MouseLeave += new System.EventHandler(this.but_odeme_MouseLeave);
-            // 
             // ogrT
             // 
             this.ogrT.Interval = 8;
@@ -744,7 +710,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.not_up)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -783,8 +748,6 @@
         private System.Windows.Forms.Button not_list;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button not_duz;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Button but_odeme;
         private System.Windows.Forms.Timer ogrT;
         private System.Windows.Forms.Timer sidebarT;
         private System.Windows.Forms.Timer kursT;

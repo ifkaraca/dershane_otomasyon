@@ -19,7 +19,6 @@ namespace dershane_otomasyon
         yks g_k_list;
         not_duz g_n_duz;
         not_list g_n_list;
-        veli g_odeme;
         ogr_duz g_ogr_duz;
         ogr_kyt g_ogr_kyt;
         ogr_list g_ogr_list;
@@ -231,12 +230,12 @@ namespace dershane_otomasyon
 
         private void but_odeme_MouseEnter(object sender, EventArgs e)
         {
-            but_odeme.BackColor = Color.FromArgb(54, 54, 54);
+            g_ogr_duz.BackColor = Color.FromArgb(54, 54, 54);
         }
 
         private void but_odeme_MouseLeave(object sender, EventArgs e)
         {
-            but_odeme.BackColor = Color.FromArgb(30, 30, 30);
+            g_ogr_duz.BackColor = Color.FromArgb(30, 30, 30);
         }
 
         private void kurs_duz_MouseEnter(object sender, EventArgs e)
@@ -384,23 +383,23 @@ namespace dershane_otomasyon
 
         private void but_odeme_Click(object sender, EventArgs e)
         {
-            if(g_odeme == null)
+            if(g_ogr_duz == null)
             {
-                g_odeme = new veli();
-                g_odeme.FormClosed += G_odeme_FormClosed;
-                g_odeme.MdiParent= this;
-                g_odeme .Dock = DockStyle.Fill;
-                g_odeme .Show();
+                g_ogr_duz = new ogr_duz();
+                g_ogr_duz.FormClosed += G_odeme_FormClosed;
+                g_ogr_duz.MdiParent= this;
+                g_ogr_duz.Dock = DockStyle.Fill;
+                g_ogr_duz.Show();
             }
             else
             {
-                g_odeme.Activate();
+                g_ogr_duz.Activate();
             }
         }
 
         private void G_odeme_FormClosed(object sender, FormClosedEventArgs e)
         {
-            g_odeme=null;
+            g_ogr_duz = null;
         }
 
         private void kurs_duz_Click(object sender, EventArgs e)
